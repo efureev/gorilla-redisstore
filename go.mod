@@ -1,4 +1,4 @@
-module github.com/efureev/gorilla-redisstore/v1
+module github.com/efureev/gorilla-redisstore
 
 go 1.13
 
