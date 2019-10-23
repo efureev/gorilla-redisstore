@@ -1,9 +1,7 @@
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0cdced379f3e41d39732a720263c8393)](https://app.codacy.com/app/efureev/hubMessage?utm_source=github.com&utm_medium=referral&utm_content=efureev/hubMessage&utm_campaign=Badge_Grade_Dashboard)
-[![Build Status](https://travis-ci.org/efureev/hubMessage.svg?branch=master)](https://travis-ci.org/efureev/hubMessage)
-[![Maintainability](https://api.codeclimate.com/v1/badges/82d6074b251f785f8c23/maintainability)](https://codeclimate.com/github/efureev/hubMessage/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/82d6074b251f785f8c23/test_coverage)](https://codeclimate.com/github/efureev/hubMessage/test_coverage)
-[![codecov](https://codecov.io/gh/efureev/hubMessage/branch/master/graph/badge.svg)](https://codecov.io/gh/efureev/hubMessage)
-[![Go Report Card](https://goreportcard.com/badge/github.com/efureev/hubMessage)](https://goreportcard.com/report/github.com/efureev/hubMessage)
+[![Build Status](https://travis-ci.com/efureev/gorilla-redisstore.svg?branch=master)](https://travis-ci.com/efureev/gorilla-redisstore)
+[![Maintainability](https://api.codeclimate.com/v1/badges/9cd3fd42c3ea8615db3b/maintainability)](https://codeclimate.com/github/efureev/gorilla-redisstore/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9cd3fd42c3ea8615db3b/test_coverage)](https://codeclimate.com/github/efureev/gorilla-redisstore/test_coverage)
+[![Go Report Card](https://goreportcard.com/badge/github.com/efureev/gorilla-redisstore)](https://goreportcard.com/report/github.com/efureev/gorilla-redisstoree)
 
 # RedisStore
 
