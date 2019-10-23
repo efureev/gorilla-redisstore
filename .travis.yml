@@ -1,5 +1,8 @@
 language: go
 
+services:
+  - redis-server
+
 matrix:
   include:
     - go: "1.10"
