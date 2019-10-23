@@ -172,7 +172,7 @@ func (s *RedisStore) KeyGen(f KeyGenFunc) {
 	s.keyGen = f
 }
 
-// SetMaxAge restricts the maximum age, in seconds, of the session record
+// MaxAge restricts the maximum age, in seconds, of the session record
 // both in database and a browser. This is to change session storage configuration.
 // If you want just to remove session use your session `s` object and change it's
 // `Options.MaxAge` to -1, as specified in
