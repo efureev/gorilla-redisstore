@@ -145,6 +145,11 @@ func (s *RedisStore) Save(r *http.Request, w http.ResponseWriter, session *sessi
 	return nil
 }
 
+func (s *RedisStore) Delete(r *http.Request, w http.ResponseWriter, session *sessions.Session) error {
+	session.Options.MaxAge = -1
+	return s.Save(r, w, session)
+}
+
 // Options set options to use when a new session is created
 func (s *RedisStore) Options(opts sessions.Options) {
 	s.options = opts

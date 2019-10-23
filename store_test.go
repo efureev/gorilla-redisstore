@@ -152,6 +152,39 @@ func TestDelete(t *testing.T) {
 	}
 }
 
+func TestDeleteNative(t *testing.T) {
+
+	store, err := NewRedisStoreWithRedisConfig(&redis.Options{
+		Addr: redisAddr,
+	}, []byte(secretKet))
+	if err != nil {
+		t.Fatal("failed to create redis store", err)
+	}
+	defer store.Close()
+
+	req, err := http.NewRequest("GET", "http://www.example.com", nil)
+	if err != nil {
+		t.Fatal("failed to create request", err)
+	}
+	w := httptest.NewRecorder()
+	session, err := store.New(req, "hello")
+	if err != nil {
+		t.Fatal("failed to create session", err)
+	}
+
+	session.Values["key"] = "value2"
+
+	err = session.Save(req, w)
+	if err != nil {
+		t.Fatal("failed to save session: ", err)
+	}
+
+	err = store.Delete(req, w, session)
+	if err != nil {
+		t.Fatal("failed to delete session: ", err)
+	}
+}
+
 func TestFlashes(t *testing.T) {
 	store, err := NewRedisStoreWithRedisConfig(&redis.Options{
 		Addr: redisAddr,
